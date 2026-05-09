@@ -1,4 +1,4 @@
-1. ID in HTML
+1. ID in HTML -
 
 An ID uniquely identifies one element.
 
@@ -67,6 +67,5 @@ Example Together
 </div>
 
 Here:
-
 main is an ID
 box is a class shared by two paragraphs
