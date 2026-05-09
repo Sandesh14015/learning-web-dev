@@ -1,0 +1,72 @@
+1. ID in HTML
+
+An ID uniquely identifies one element.
+
+Syntax
+<p id="para1">Hello</p>
+CSS Example
+<style>
+#para1{
+  color: red;
+}
+</style>
+
+<p id="para1">Hello</p>
+Important Points
+An ID should be unique
+One element → one unique ID
+CSS uses #
+
+Example:
+
+#header
+2. Class in HTML
+
+A class is used for grouping multiple elements together.
+
+Syntax
+<p class="text">First</p>
+<p class="text">Second</p>
+CSS Example
+<style>
+.text{
+  color: blue;
+}
+</style>
+
+<p class="text">First</p>
+<p class="text">Second</p>
+Important Points
+Multiple elements can have the same class
+One element can also have multiple classes
+CSS uses .
+
+Example:
+
+.text
+Difference Between ID and Class
+Feature	ID	Class
+Symbol	#	.
+Unique?	Yes	No
+Used for	Single element	Multiple elements
+Multiple allowed?	No	Yes
+Example Together
+<style>
+#main{
+  background-color: yellow;
+}
+
+.box{
+  color: blue;
+}
+</style>
+
+<div id="main">
+  <p class="box">Hello</p>
+  <p class="box">World</p>
+</div>
+
+Here:
+
+main is an ID
+box is a class shared by two paragraphs
