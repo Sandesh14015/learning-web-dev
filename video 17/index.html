@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+<style>
+    /*Class selector*/
+    .red{
+        color: #e0e308;
+    }
+   /*ID selector*/
+    #green{
+        background-color: #17e232;
+        color: blueviolet;
+    }
+    /*Child Selector*/
+    pre>h1{
+        color: aqua;
+        background-color: brown;
+    }
+    /*Decendent Selector*/
+    pre h1{
+        color: aqua;
+        background-color: brown;
+    }
+    /*
+    *{
+        background-color: black;
+        color: aqua;
+    }
+    */
+    /*Pseudo selector*/
+    A:link{
+        color: red;
+    }
+   a:active{
+        background-color: green;
+    }
+    a:visited{
+        color: blue;
+    }
+        a:hover{
+            color: blue;
+            background-color: yellow;
+        }
+</style>
+</div>
+</head>
+<body>
+    <pre>
+    <h3>HELLO</h3>
+    </pre>
+    <pre>
+    TADA
+    </pre>
+    <div class="red">THIS IS A PARAGRAPH</div>
+    <div id="green">HELLO GUESS WHAT I AM ALSO A PARAGRAPH</div>
+    <div>
+        <a href="http://google.com">Go to Google</a>
+    </div>
+</body>
+</html>
