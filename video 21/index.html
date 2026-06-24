@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity of this selector is 1 */
+        h1{
+            color:aqua;
+        }
+        /* This selector has a specificity of 10  */
+        .cyellow{
+            color:yellow;
+        }
+        /* This selector has a specificity of 10  
+        Element(1)+Class(10)*/
+        h1.cred{
+            color:crimson;
+        }
+        /* This selector has a specificity of 10  */
+        .cpurple{
+            color:rgb(7, 200, 52);
+        }
+          /* This selector has a specificity of 100 */
+       [data-x="a"]{
+            background-color:blue;
+        }
+        /* element selector(1)+class selector(10)+attribute selector(10)+pseudo selector(10)= */
+        a.sndshclass.rohan-class[href]:hover{
+            color:rgb(239, 23, 221); 
+        }
+        path{
+            color:rgb(239, 23, 221); 
+        }           
+           </style>
+</head>
+<body>
+    <div>
+                                                                                                                                                                                                                                                                                                                                                         
+        <h1 class="sndshclass" data-x="a">CSS Specificity</h1>
+
+    </div>
+</body>
+</html>
