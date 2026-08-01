@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Float and Clear</title>
 </head>
+<style>
+    .cards{
+        border: 1px solid black;
+        display:flow-root;
+    }
+    img {
+        float: right;
+        margin-right: 20px;
+    }
+    .cards:nth-child(3){
+       clear: none;
+    }
+</style>
 <body>
-    
+    <div class="cards">
+        <img src="https://img.magnific.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640.jpg?semt=ais_hybrid&w=740&q=80" alt="Nature" width="300px" >
+        <div class="cards">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae rem veritatis distinctio, eveniet eos unde officia error consequuntur vero, odio incidunt nihil eius autem nisi ullam commodi dolor expedita. Dolores iste temporibus odit provident?</div>
+        <div class="cards">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dicta maiores libero illum ducimus obcaecati, quis iusto natus reiciendis animi velit asperiores consequuntur doloremque debitis facilis commodi reprehenderit? Reprehenderit eligendi quasi mollitia at placeat, culpa, minus, expedita similique veritatis iusto necessitatibus dolor nulla maiores aspernatur?</div>
+        <div class="cards">Card 3</div>
+    </div>
 </body>
 </html>
+/* not the write way to create layouts using float and clear. The better way is to use flexbox or grid for layout designs. */
