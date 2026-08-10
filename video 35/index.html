@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+</head>
+<style>
+    /* .box::first-line {
+        color: red;
+        font-size: 20px;
+    } */
+    .boxes *{
+        color: red;
+        border: 1px solid black;
+    }
+    /* [data-color="primary"] {
+        color: blue;
+        padding-top: 45px;
+    } */
+     .box:nth-child(even){
+        color: blue;
+        padding-top: 45px;
+     }
+     .boxes::before
+        {
+            content: "Imma bad Nigga";
+        }
+    .boxes::after
+    {
+        content: "Whats goin' son";
+    }
+    .boxes::selection{
+        color: rgb(28, 234, 13);
+        background-color: black;
+    }
+    .box::first-letter{
+        color: chocolate;
+        font-size :larger;
+    }
+</style>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am a Box </div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+    </div>
+</body>
+
+</html>
