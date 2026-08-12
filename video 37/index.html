@@ -12,10 +12,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction:column-reverse;
+            flex-direction: column-reverse;
             margin: 10px;
         }
-         .container2 {
+
+        .container2 {
             border: 2px solid red;
             height: 200px;
             display: flex;
@@ -24,22 +25,84 @@
             margin: 10px;
             width: auto;
         }
-          .container3 {
+
+        .container3 {
             border: 2px solid red;
             height: 200px;
             display: flex;
             /* justify-content: center; */
             align-items: center;
             margin: 10px;
-            flex-direction:row-reverse;
+            flex-direction: row-reverse;
             width: auto;
         }
+
+        .container4 {
+            border: 2px solid red;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .container5 {
+            border: 2px solid red;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* There is no justify-content property in the below container. So, the default value of justify-content is flex-start. So, all the items are aligned to the left side of the container.
+        */
+        .container6 {
+            border: 2px solid red;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            flex-wrap: wrap-reverse;
+        }
+
+        .container7 {
+            border: 2px solid red;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            flex-flow: row-reverse;
+            gap: 00px;
+        }
+
+        .container8 {
+            border: 2px solid red;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            flex-wrap: wrap;
+            row-gap: 5px;
+            column-gap: 1px;
+        }
+
         .item {
             height: 32px;
             width: 32px;
             border: 1px solid black;
-            margin:4px;
-            background-color:blueviolet
+            margin: 4px;
+            background-color: blueviolet
+        }
+        .order-1 {
+            order: 1;
+        }
+        .order-2 {
+            order: 2;
         }
     </style>
 </head>
@@ -82,6 +145,127 @@
         <div class="item"></div>
         <div class="item"></div>
 
+    </div>
+    <div class="container4">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="container5">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="container6">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="container7">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="container8">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
     </div>
 </body>
 
