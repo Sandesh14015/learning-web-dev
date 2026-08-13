@@ -12,7 +12,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column-reverse;
             margin: 10px;
         }
 
@@ -24,6 +23,7 @@
             align-items: center;
             margin: 10px;
             width: auto;
+            flex-grow: 3;
         }
 
         .container3 {
@@ -98,27 +98,40 @@
             margin: 4px;
             background-color: blueviolet
         }
-        .order-1 {
-            order: 1;
+        .item1 {
+            /* flex-grow: 5; */
+            flex-shrink: 2;
+        }
+        /* .order-1 {
+            order: 10;
         }
         .order-2 {
             order: 2;
         }
+        .order-3 {
+            order: 3;
+        }
+        .order-4{
+            order:4;
+        }
+        .order-5{
+            order:5;
+        } */
     </style>
 </head>
 
 <body>
     <div class="container1">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item order-2">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
     </div>
     <div class="container2">
         <div class="item"></div>
