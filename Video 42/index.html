@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
         .container{
             border:2px solid red;
             height: 200px;
@@ -16,16 +20,34 @@
             border:2px solid black;
             /* transform: rotate(45deg); */
             /* transform: rotate(0.25turn); */
-            transform: rotate(0.5turn);
+            transform: rotate(55deg);
+            /* transform: translatey(100%); */
+            /* transform: translatey(100%) skewY(34deg) translatey(-50%); */
+            transform-origin: 0% 0%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+        /* .item-2{
+            height:50px;
+            width:50px;
+            background-color: rgb(229, 91, 91);
+            border:2px solid black;
+            /* transform: rotate(45deg); */
+            /* transform: rotate(0.25turn); */
+            /* transform: rotate(0.5turn); */
+            /* transform:skewY(34deg); */
+            /* transform: translatey(50%); */
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+        } */ 
     </style>
 </head>
 <body>
 <div class="container">
         <div class="item item-1">box</div>
+        <!-- <div class="item item-2">box</div> -->
     </div>
 </body>
 </html>
