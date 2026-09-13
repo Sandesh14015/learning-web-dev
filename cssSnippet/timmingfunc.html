@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing Func</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        .box1{
+            width: 400px;
+            height: 80px;
+            background-color:yellow;
+            transition-duration:2s;
+            transition-timing-function: ease;
+        }
+        .box2{
+            width: 400px;
+            height: 80px;
+            background-color:rgb(255, 204, 0);
+            transition-duration:2s;
+            transition-timing-function: ease-in;
+        }
+        .box3{
+            width: 400px;
+            height: 80px;
+            background-color:rgb(255, 174, 0);
+            transition-duration:2s;
+            transition-timing-function: ease-in-out;
+        }
+        .box4{
+            width: 400px;
+            height: 80px;
+            background-color:rgb(255, 149, 0);
+            transition-duration:2s;
+            transition-timing-function: ease-out;
+        }
+        .box5{
+            width: 400px;
+            height: 80px;
+            background-color:rgb(255, 98, 0);
+            transition-duration:2s;
+            transition-timing-function: linear;
+
+        }
+        .box6{
+            width: 400px;
+            height: 80px;
+            background-color:rgb(255, 72, 0);
+            transition-duration:2s;
+            transition-timing-function: steps(6);
+        }
+        .box7{
+            width: 400px;
+            height: 80px;
+            background-color:rgb(255, 42, 0);
+            transition-duration:2s;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .box:hover{
+            width: 800px;
+            transition-duration: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Ease</div>
+        <div class="box box2">Ease-in</div>
+        <div class="box box3">Ease-in-out</div>
+        <div class="box box4">Ease-out</div>
+        <div class="box box5">Linear</div>
+        <div class="box box6">Steps</div>
+        <div class="box box7">Cubic-Bezier</div>
+    </div>
+</body>
+</html>
