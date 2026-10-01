@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animations Grid</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            font-family: sans-serif;
+        }
+
+        /* 1. Use CSS Grid for the layout instead of Flexbox */
+        .scroll-element {
+            display: grid;
+            /* Creates 2 equal columns that automatically adjust */
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 24px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 2. Style the blocks and apply the scroll-driven animations */
+        .scroll-element div {
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            
+            /* Core Scroll Animation settings */
+            animation: scrolling linear both;
+            animation-timeline: view(); 
+
+            /* 
+               👉 STAGGER RULE: Shifting the trigger ranges dynamically using --i.
+               Even numbers animate slightly later than odd numbers so they pop up 
+               one-by-one instead of simultaneously in pairs!
+            */
+            animation-range: entry calc(var(--i) * 3%) cover 40%;
+        }
+
+        /* Optional: Making a masonry feel by changing item heights */
+        .scroll-element div:nth-child(odd) {
+            height: 250px;
+        }
+        .scroll-element div:nth-child(even) {
+            height: 380px;
+        }
+
+        /* The exact @keyframes configuration seen in your tutorial video */
+        @keyframes scrolling {
+            from {
+                opacity: 0;
+                transform: scale(0.6);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scroll-element">
+        <!-- Assign sequential index flags via --i to control the one-by-one timing -->
+        <div class="block1" style="background-color: #ebdcd0; --i: 1;"></div>
+        <div class="block2" style="background-color: #3b536b; --i: 2;"></div>
+        <div class="block3" style="background-color: #796878; --i: 3;"></div>
+        <div class="block4" style="background-color: #0b8fa3; --i: 4;"></div>
+        <div class="block5" style="background-color: #f7b267; --i: 5;"></div>
+        <div class="block6" style="background-color: #f25c54; --i: 6;"></div>
+        <div class="block7" style="background-color: #c44536; --i: 7;"></div>
+        <div class="block8" style="background-color: #777696; --i: 8;"></div>
+        <div class="block9" style="background-color: #eeddd3; --i: 9;"></div>
+        <div class="block10" style="background-color: #0077b6; --i: 10;"></div>
+        <div class="block11" style="background-color: #e07a5f; --i: 11;"></div>
+        <div class="block12" style="background-color: #3d5a80; --i: 12;"></div>
+    </div>
+
+</body>
+</html>

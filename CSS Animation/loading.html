@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Aanimation</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height:50px;
+            width: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            border: 5px solid white;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin{
+            0%{
+                transform: rotateX(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading"></div>
+</body>
+</html>
