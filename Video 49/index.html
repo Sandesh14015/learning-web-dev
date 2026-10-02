@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object fill and position</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-color:black;
+        }
+    .container{
+        height:600px;
+        width:800px;
+        border: 2px solid white;
+        background-color: azure;
+    }
+    img{
+        height:100%;
+        width:100%;
+        /* object-fit: cover; */
+        object-fit: contain;
+        object-position: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <img src="red harlow.jfif" alt="sky">
+    </div>
+</body>
+</html>
